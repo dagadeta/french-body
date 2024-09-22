@@ -2,7 +2,7 @@ body {
     text-align: center;
     background-color: #06174c;
     color: white;
-    font-family: Calibri, serif;
+    font-family: "Sans Serif Collection", serif;
 }
 
 button {
@@ -10,13 +10,19 @@ button {
 }
 
 .bodyPart {
-    width: 200px;
-    height: 200px;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
     text-align: center;
     margin: 5px;
     border: none;
     border-radius: 10px;
     background-color: white;
+    transition-duration: 0.4s;
+}
+
+.bodyPart:hover {
+    background-color: yellow;
 }
 
 .bodyPartImage {
@@ -24,6 +30,24 @@ button {
     height: 190px;
 }
 
-a {
+a {transition-duration: 0.4s;}
+
+a:link {
     color: yellow;
+    text-decoration: none;
+}
+
+a:visited {
+    color: yellow;
+    text-decoration: none;
+}
+
+a:hover {
+    color: greenyellow;
+    text-decoration: underline;
+}
+
+a:active {
+    color: greenyellow;
+    text-decoration: underline;
 }
